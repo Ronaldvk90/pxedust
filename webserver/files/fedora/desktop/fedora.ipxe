@@ -1,0 +1,6 @@
+#!ipxe
+
+kernel http://10.10.10.2:81/fedora/desktop/isolinux/vmlinuz initrd=initrd.img root=live:http://10.10.10.2:81/fedora/desktop/LiveOS/squashfs.img ro rd.live.image rd.luks=0 rd.md=0 rd.dm=0
+initrd http://10.10.10.2:81/fedora/desktop/isolinux/initrd.img
+
+boot

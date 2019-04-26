@@ -1,0 +1,90 @@
+#!ipxe
+
+#================ Main Menu =================
+menu Ronald's beun paleis
+item winpe		Windows PE
+item
+item
+item gentoo		Boot Gentoo installer x86_64
+item arch		Boot Arch Linux x86_64
+item debian		Debian stable x86_64
+item 1604		Ubuntu 16.04 LTS x86_64
+item 1804		Ubuntu 18.04 LTS x86_64
+item 1810		Ubuntu 18.10	 x86_64
+item 1904		Ubuntu 19.04 	 x86_64
+item cent6		Centos 6 x86_64 Installer
+item cent7		Centos 7 x86_64 Installer
+item fedoradesktopkde	Boot Fedore KDE live x86_64
+item fedoradesktop	Boot Fedora Desktop live x86_64
+item fedorainstaller28	Boot Fedora28 Installer x86_64
+item fedorainstaller29	Boot Fedora29 Installer x86_64
+item clonezilla		Boot Clonezilla
+item roon		Boot Roons Rescue CD
+
+choose target && goto ${target}
+#============ Main Menu Options =============
+:winpe
+chain ${url}/winpe/winpe.ipxe
+boot
+
+:gentoo
+chain ${url}/gentoo/gentoo.ipxe
+boot
+
+:arch
+chain ${url}/arch/arch.ipxe
+boot
+
+:debian
+chain ${url}/debian/debian.ipxe
+
+:cent6
+chain ${url}/centos/6/centos6.ipxe
+boot
+
+:cent7
+chain ${url}/centos/7/centos7.ipxe
+boot
+
+:fedoradesktopkde
+chain ${url}/fedora/desktopkde/fedora.ipxe
+boot
+
+:fedoradesktop
+chain ${url}/fedora/desktop/fedora.ipxe
+boot
+
+:fedorainstaller28
+chain ${url}/fedora/installer28/fedora.ipxe
+boot
+
+:fedorainstaller29
+chain ${url}/fedora/installer29/fedora.ipxe
+boot
+
+:1604
+chain ${url}/ubuntu/1604/1604.ipxe
+boot
+
+:1804
+chain ${url}/ubuntu/1804/1804.ipxe
+boot
+
+:1810
+chain ${url}/ubuntu/1810/1810.ipxe
+boot
+
+:1904
+chain ${url}/ubuntu/1904/1904.ipxe
+boot
+
+:clonezilla
+chain ${url}/clonezilla/clonezilla.ipxe
+boot
+
+:roon
+chain ${url}/roon/roon.ipxe
+boot
+#============== Main Menu End ===============#
+
+set url=xx.xx.xx.xx

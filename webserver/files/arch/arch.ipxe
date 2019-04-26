@@ -1,0 +1,9 @@
+#!ipxe
+cpuid --ext 29 && set arch x86_64 || set arch i686
+
+set base-url http://ftp.nluug.nl/pub/os/Linux/distr/archlinux/iso/2019.03.01
+kernel ${base-url}/arch/boot/${arch}/vmlinuz archisobasedir=arch archiso_http_srv=${base-url}/ initrd=archiso.img ip=::
+initrd ${base-url}/arch/boot/intel_ucode.img
+initrd ${base-url}/arch/boot/amd_ucode.img
+initrd ${base-url}/arch/boot/${arch}/archiso.img
+boot

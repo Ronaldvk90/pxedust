@@ -1,0 +1,6 @@
+#!ipxe
+
+kernel http://10.10.10.2:81/clonezilla/live/vmlinuz initrd=initrd.img boot=live username=user union=overlay components noswap noprompt vga=788 keyboard-layouts=en locales=en_US.UTF-8 fetch=http://10.10.10.2:81/clonezilla/live/filesystem.squashfs
+initrd http://10.10.10.2:81/clonezilla/live/initrd.img
+
+boot

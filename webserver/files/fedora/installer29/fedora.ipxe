@@ -1,0 +1,9 @@
+#!ipxe
+  
+# Set source URI
+set repo http://ftp.nluug.nl/pub/os/Linux/distr/fedora/linux/releases/29/Everything/x86_64/os
+
+# Start installer
+kernel ${repo}/images/pxeboot/vmlinuz initrd=initrd.img repo=${repo}
+initrd ${repo}/images/pxeboot/initrd.img
+boot
