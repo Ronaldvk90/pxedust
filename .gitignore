@@ -15,6 +15,7 @@
 
 !/dnsmasq
 /dnsmasq/*
+!/dnsmasq/Dockerfile
 !/dnsmasq/files
 /dnsmasq/files/*
 !/dnsmasq/files/entrypoint.sh
