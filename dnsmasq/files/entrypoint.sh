@@ -29,7 +29,7 @@ pxe-service=BC_EFI, "Boot UEFI PXE-BC", snponly.efi
 # PXEClient:Arch:00009
 pxe-service=X86-64_EFI, "Boot UEFI PXE-64", snponly.efi
 
-dhcp-range=${INT_IP},proxy,${INT_MASK}
+dhcp-range=${INT_IP},proxy,255.255.255.0
 EOT
 
 /usr/sbin/dnsmasq --no-daemon
