@@ -16,8 +16,7 @@ item cent6		Centos 6 x86_64 Installer
 item cent7		Centos 7 x86_64 Installer
 item fedoradesktopkde	Boot Fedore KDE live x86_64
 item fedoradesktop	Boot Fedora Desktop live x86_64
-item fedorainstaller28	Boot Fedora28 Installer x86_64
-item fedorainstaller29	Boot Fedora29 Installer x86_64
+item fedorainstaller30	Boot Fedora30 Installer x86_64
 item clonezilla		Boot Clonezilla
 item roon		Boot Roons Rescue CD
 
@@ -54,12 +53,8 @@ boot
 chain ${url}/fedora/desktop/fedora.ipxe
 boot
 
-:fedorainstaller28
-chain ${url}/fedora/installer28/fedora.ipxe
-boot
-
-:fedorainstaller29
-chain ${url}/fedora/installer29/fedora.ipxe
+:fedorainstaller30
+chain ${url}/fedora/installer30/fedora.ipxe
 boot
 
 :1604

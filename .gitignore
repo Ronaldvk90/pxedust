@@ -44,8 +44,7 @@
 /webserver/files/fedora/desktopkde/*
 !/webserver/files/fedora/desktopkde/fedora.ipxe
 
-!/webserver/files/fedora/installer28
-!/webserver/files/fedora/installer29
+!/webserver/files/fedora/installer30
 
 !/webserver/files/ubuntu
 
