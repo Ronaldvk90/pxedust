@@ -1,8 +1,6 @@
 # Welcome to my bootserver!
 
-First of all. This is partially due to legal issues not complete.
-
-I deliver a OOBE dnsmasq server, tftp and nginx. The nginx server however is *not* fully populated! This due to size restrictions and legal issue (winpe). So the live operating systems have to be populated by hand. I removed my own rescue cd (contact me if you are curious). Furthermore i removed both fedora live images, Clonezilla and winpe. The ipxe files however are there. You just have to download these options yourself if you want them. 
+I deliver a OOBE dnsmasq server, tftp and nginx.
 
 For winpe you can use wimboot. The iPXE project has detailed information how to build and install winpe.
 http://www.ipxe.org/wimboot

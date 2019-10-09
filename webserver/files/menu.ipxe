@@ -2,34 +2,19 @@
 
 #================ Main Menu =================
 menu Ronald's beun paleis
-item winpe		Windows PE
 item
-item
-item gentoo		Boot Gentoo installer x86_64
 item arch		Boot Arch Linux x86_64
 item debian		Debian stable x86_64
 item 1604		Ubuntu 16.04 LTS x86_64
 item 1804		Ubuntu 18.04 LTS x86_64
 item 1810		Ubuntu 18.10	 x86_64
 item 1904		Ubuntu 19.04 	 x86_64
+item 1910		Ubuntu 19.10	 x86_64
 item cent6		Centos 6 x86_64 Installer
 item cent7		Centos 7 x86_64 Installer
-item fedoradesktopkde	Boot Fedore KDE live x86_64
-item fedoradesktop	Boot Fedora Desktop live x86_64
-item fedorainstaller30	Boot Fedora30 Installer x86_64
-item clonezilla		Boot Clonezilla
-item roon		Boot Roons Rescue CD
-
+item
 choose target && goto ${target}
 #============ Main Menu Options =============
-:winpe
-chain ${url}/winpe/winpe.ipxe
-boot
-
-:gentoo
-chain ${url}/gentoo/gentoo.ipxe
-boot
-
 :arch
 chain ${url}/arch/arch.ipxe
 boot
@@ -43,18 +28,6 @@ boot
 
 :cent7
 chain ${url}/centos/7/centos7.ipxe
-boot
-
-:fedoradesktopkde
-chain ${url}/fedora/desktopkde/fedora.ipxe
-boot
-
-:fedoradesktop
-chain ${url}/fedora/desktop/fedora.ipxe
-boot
-
-:fedorainstaller30
-chain ${url}/fedora/installer30/fedora.ipxe
 boot
 
 :1604
@@ -73,13 +46,9 @@ boot
 chain ${url}/ubuntu/1904/1904.ipxe
 boot
 
-:clonezilla
-chain ${url}/clonezilla/clonezilla.ipxe
-boot
+:1910
+chain ${url}/ubuntu/1910/1910.ipxe
 
-:roon
-chain ${url}/roon/roon.ipxe
-boot
 #============== Main Menu End ===============#
 
 set url=xx.xx.xx.xx
