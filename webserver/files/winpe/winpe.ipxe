@@ -1,8 +1,0 @@
-#!ipxe
-  
-cpuid --ext 29 && set arch amd64 || set arch x86
-kernel wimboot
-initrd ${arch}/bcd	BCD
-initrd ${arch}/boot.sdi	boot.sdi
-initrd ${arch}/boot.wim	boot.wim
-boot

@@ -1,37 +1,27 @@
 #!ipxe
 
 #================ Main Menu =================
-menu Ronald's beun paleis
+menu Ronaldvk90 Bootserver
 item
-item arch		Boot Arch Linux x86_64
 item debian		Debian stable x86_64
-item 1604		Ubuntu 16.04 LTS x86_64
 item 1804		Ubuntu 18.04 LTS x86_64
 item 1810		Ubuntu 18.10	 x86_64
 item 1904		Ubuntu 19.04 	 x86_64
 item 1910		Ubuntu 19.10	 x86_64
-item cent6		Centos 6 x86_64 Installer
 item cent7		Centos 7 x86_64 Installer
+item cent8		Centos 8 x86_64 Installer
 item
 choose target && goto ${target}
 #============ Main Menu Options =============
-:arch
-chain ${url}/arch/arch.ipxe
-boot
-
 :debian
 chain ${url}/debian/debian.ipxe
-
-:cent6
-chain ${url}/centos/6/centos6.ipxe
-boot
 
 :cent7
 chain ${url}/centos/7/centos7.ipxe
 boot
 
-:1604
-chain ${url}/ubuntu/1604/1604.ipxe
+:cent8
+chain ${url}/centos/8/centos8.ipxe
 boot
 
 :1804
