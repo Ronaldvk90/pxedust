@@ -1,7 +1,0 @@
-#!ipxe
-
-set base http://ftp.nluug.nl/pub/os/Linux/distr/CentOS/6/os/x86_64
-
-kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.img repo=${base}
-initrd ${base}/images/pxeboot/initrd.img
-boot

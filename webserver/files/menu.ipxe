@@ -8,6 +8,7 @@ item 1804		Ubuntu 18.04 LTS x86_64
 item 1810		Ubuntu 18.10	 x86_64
 item 1904		Ubuntu 19.04 	 x86_64
 item 1910		Ubuntu 19.10	 x86_64
+item 2004		Ubuntu 20.04 LTS x86_64
 item cent7		Centos 7 x86_64 Installer
 item cent8		Centos 8 x86_64 Installer
 item
@@ -38,6 +39,9 @@ boot
 
 :1910
 chain ${url}/ubuntu/1910/1910.ipxe
+
+:2004
+chain ${url}/ubuntu/2004/2004.ipxe
 
 #============== Main Menu End ===============#
 
