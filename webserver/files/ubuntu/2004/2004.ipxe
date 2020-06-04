@@ -1,0 +1,6 @@
+#!ipxe
+
+kernel https://ftp.nluug.nl/os/Linux/distr/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/linux initrd=initrd.gz
+initrd https://ftp.nluug.nl/os/Linux/distr/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/initrd.gz
+
+boot
